@@ -1,0 +1,169 @@
+
+.second-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+
+
+
+.logo {
+    margin-right: 1rem;
+    font-size: 22px;
+    cursor: pointer;
+}
+.logo span{
+    color: var(--color-feature);
+}
+
+.links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    gap: 3rem;
+    margin-left: 10rem;
+}
+
+
+
+.search-bar input{
+    border: none;
+}
+
+.search-bar input:focus{
+outline: none;
+}
+
+
+.search-bar {
+    display: flex;
+    justify-items: flex-start;
+    border: 1px solid #007FFF; 
+    border-radius: 0.75rem;
+    padding: 5px; 
+    margin-right: 12px;
+  }
+  
+  input {
+    flex: 1; 
+    border: none; 
+    padding: 7px; 
+  }
+  
+  .search-icon {
+    margin-top: 7px;
+    cursor: pointer; 
+    margin-right: 10px;
+  }
+.heart-icon{
+    color: #007FFF;
+    font-size: 18px;
+    margin-right: 5rem;
+}
+
+
+.cart .shoopingcart{
+    margin-left: 7rem;
+    font-size: 22px;
+    cursor: pointer;
+    color: #007FFF;
+}
+
+.navbar-menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.navbar-menu_container-links{
+    gap: 2rem;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    line-height: 3rem;
+
+}
+
+@media screen and (max-width: 1350px) {
+    .second-navbar{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .links{
+        display: flex;
+        gap: 2rem;
+        margin-left: 6rem;
+    }
+    .search-bar{
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .second-navbar{
+        gap: 0.25rem;
+    }
+    .logo{
+        margin-right: 0rem;
+        margin-left: 0;
+    }
+    .links{
+        margin-left: 3rem;
+    }
+    .search-bar{
+        width: auto;
+    }
+    .heart-icon{
+        display: none;
+    }
+    .cart .shoopingcart{
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .links{
+        display: none;
+    }
+    .search-bar input{
+        justify-content: flex-end;
+    }
+    .heart-icon{
+        display: none;
+    }
+    .cart{
+        display: inline;
+    }
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .links{
+        display: none;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    .cart{
+        display: none;
+    }
+    .search-bar{
+        display: none;
+    }
+}

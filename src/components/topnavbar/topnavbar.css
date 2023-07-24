@@ -1,0 +1,13 @@
+.top-navbar{
+    height: fit-content;
+    text-align: center;
+    background-color: #007FFF;
+    color: white;
+    padding: 2px;
+}
+
+@media screen and (max-width: 1150px){
+    .top-navbar{
+        width: 100% !important; 
+    }
+}
